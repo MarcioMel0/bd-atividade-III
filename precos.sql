@@ -1,5 +1,6 @@
 CREATE DATABASE PRECO;
 USE PRECO;
+DROP DATABASE PRECO;
 
 CREATE TABLE produtos (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -8,9 +9,9 @@ CREATE TABLE produtos (
 );
 
 INSERT INTO produtos (nome_do_produto, preco)
-VALUES ('Produto A', 50.00),
-       ('Produto B', 75.50),
-       ('Produto C', 120.00);
+VALUES ('FONE', 50.00),
+       ('MOUSE', 75.50),
+       ('TECLADO', 120.00);
        
 
 DELIMITER //

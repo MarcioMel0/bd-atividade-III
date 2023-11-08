@@ -1,5 +1,6 @@
 CREATE DATABASE PEDIDOS;
 USE PEDIDOS;
+DROP DATABASE PEDIDOS;
 
 
 CREATE TABLE pedidos (
@@ -11,11 +12,11 @@ CREATE TABLE pedidos (
 
 
 INSERT INTO pedidos (cliente_nome, status, data_entrega)
-VALUES ('Cliente A', 'Pendente', NULL),
-       ('Cliente B', 'Entregue', '2023-10-25'),
-       ('Cliente C', 'Pendente', NULL),
-       ('Cliente D', 'Cancelado', NULL),
-       ('Cliente E', 'Pendente', NULL);
+VALUES ('MARIA', 'Pendente', NULL),
+       ('DIOGO', 'Entregue', '2023-10-25'),
+       ('DIEGO', 'Pendente', NULL),
+       ('GUNDES', 'Cancelado', NULL),
+       ('JUSTIN', 'Pendente', NULL);
        
 
 

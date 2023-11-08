@@ -1,5 +1,6 @@
 CREATE DATABASE ATUALIZAR_ESTOQUE;
 USE ATUALIZAR_ESTOQUE;
+DROP DATABASE ATUALIZAR_ESTOQUE;
 
 CREATE TABLE produtos (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -8,9 +9,9 @@ CREATE TABLE produtos (
 );
 
 INSERT INTO produtos (nome_do_produto, quantidade_em_estoque)
-VALUES ('Produto A', 100),
-       ('Produto B', 50),
-       ('Produto C', 200);
+VALUES ('MONITOR', 100),
+       ('HD', 50),
+       ('SSD', 200);
 
 
 

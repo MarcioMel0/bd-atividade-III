@@ -1,5 +1,6 @@
 CREATE DATABASE ESTOQUE;
 USE ESTOQUE;
+DROP DATABASE ESTOQUE;
 
 
 CREATE TABLE produtos (
@@ -10,11 +11,11 @@ CREATE TABLE produtos (
 
 
 INSERT INTO produtos (nome_do_produto, quantidade_em_estoque)
-VALUES ('Produto A', 3),
-       ('Produto B', 7),
-       ('Produto C', 2),
-       ('Produto D', 8),
-       ('Produto E', 1);
+VALUES ('CELULAR', 3),
+       ('FONE', 7),
+       ('TECLADO', 2),
+       ('MONITOR', 8),
+       ('CADEIRA GAME',1);
 
 
 

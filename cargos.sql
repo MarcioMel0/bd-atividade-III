@@ -1,7 +1,8 @@
 CREATE DATABASE CARGO;
 USE CARGO;
+DROP DATABASE CARGO;
 
--- Criação da tabela funcionarios
+
 CREATE TABLE funcionarios (
     id INT PRIMARY KEY,
     nome VARCHAR(255),
@@ -9,22 +10,22 @@ CREATE TABLE funcionarios (
     departamento VARCHAR(255)
 );
 
--- Inserção de dados na tabela funcionarios
+
 INSERT INTO funcionarios (id, nome, cargo, departamento) VALUES
-(1, 'Nome Funcionario 1', 'Cargo 1', 'Administrativo'),
-(2, 'Nome Funcionario 2', 'Cargo 2', 'Vendas'),
-(3, 'Nome Funcionario 3', 'Cargo 3', 'Administrativo'),
-(4, 'Nome Funcionario 4', 'Cargo 4', 'RH'),
-(5, 'Nome Funcionario 5', 'Cargo 5', 'Administrativo');
+(1, 'MATHEUS', 'Cargo 1', 'Administrativo'),
+(2, 'MARCIO', 'Cargo 2', 'Vendas'),
+(3, 'VITOR', 'Cargo 3', 'Administrativo'),
+(4, 'LIMA', 'Cargo 4', 'RH'),
+(5, 'PONTES', 'Cargo 5', 'Administrativo');
 
 
--- Criação da tabela departamentos
+
 CREATE TABLE departamentos (
     id INT PRIMARY KEY,
     nome_departamento VARCHAR(255)
 );
 
--- Inserção de dados na tabela departamentos
+
 INSERT INTO departamentos (id, nome_departamento) VALUES
 (1, 'Administrativo'),
 (2, 'Vendas'),

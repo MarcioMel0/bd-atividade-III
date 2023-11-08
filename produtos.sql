@@ -1,5 +1,6 @@
 CREATE DATABASE PRODUTOS;
 USE PRODUTOS;
+DROP DATABASE PRODUTOS;
 
 CREATE TABLE produtos (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -10,9 +11,9 @@ CREATE TABLE produtos (
 
 
 INSERT INTO produtos (nome_do_produto, data_validade, preco)
-VALUES ('Produto A', '2023-12-31', 50.99),
-       ('Produto B', '2023-11-15', 75.50),
-       ('Produto C', '2023-10-05', 120.00);
+VALUES ('MONITOR', '2023-12-31', 50.99),
+       ('MICROFONE', '2023-11-15', 75.50),
+       ('FONE', '2023-10-05', 120.00);
        
 
 DELIMITER //
@@ -31,6 +32,5 @@ END;
 DELIMITER ;
 
 
-SHOW CREATE TRIGGER valida_data_validade;
-
 SELECT * FROM produtos;
+

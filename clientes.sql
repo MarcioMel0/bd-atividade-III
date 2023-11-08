@@ -1,27 +1,30 @@
 CREATE DATABASE CLIENTES;
 USE CLIENTES;
+DROP DATABASE CLIENTES;
 
 CREATE TABLE vendedores (
     id INT PRIMARY KEY,
     nome VARCHAR(255),
-    email VARCHAR(255)
+    email VARCHAR(255),
+    telefone VARCHAR(45)
 );
 
 CREATE TABLE clientes (
     id INT PRIMARY KEY,
     nome VARCHAR(255),
     email VARCHAR(255),
+    telefone VARCHAR(45),
     vendedor_id INT,
     FOREIGN KEY (vendedor_id) REFERENCES vendedores(id)
 );
 
-INSERT INTO vendedores (id, nome, email) VALUES
-(1, 'Nome do Vendedor 1', 'vendedor1@example.com'),
-(2, 'Nome do Vendedor 2', 'vendedor2@example.com');
+INSERT INTO vendedores (id, nome, email,telefone) VALUES
+(1, 'MATHEUS', 'matheus@example.com','7198654714'),
+(2, 'MARIA', 'maria@example.com','7198754863');
 
-INSERT INTO clientes (id, nome, email, vendedor_id) VALUES
-(1, 'Nome do Cliente 1', 'cliente1@example.com', 1),
-(2, 'Nome do Cliente 2', 'cliente2@example.com', 2);
+INSERT INTO clientes (id, nome, email, vendedor_id,telefone) VALUES
+(1, 'LIMA', 'lima@example.com', 1,'7198562357'),
+(2, 'VITOR', 'vitor@example.com', 2,'719865475');
 
 CREATE VIEW vw_relacionamento_cliente_vendedor AS
 SELECT

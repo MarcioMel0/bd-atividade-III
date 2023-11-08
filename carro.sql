@@ -1,5 +1,6 @@
 CREATE DATABASE CARRO;
 USE CARRO;
+DROP DATABASE CARRO;
 
 
 CREATE TABLE produtos (
@@ -11,11 +12,11 @@ CREATE TABLE produtos (
 
 
 INSERT INTO produtos (nome_do_produto, quantidade_em_estoque, preco)
-VALUES ('Produto A', 10, 150.00),
-       ('Produto B', 5, 120.50),
-       ('Produto C', 3, 200.75),
-       ('Produto D', 8, 90.25),
-       ('Produto E', 2, 180.00);
+VALUES ('CELULAR', 10, 150.00),
+       ('MONITOR', 5, 120.50),
+       ('MOUSE', 3, 200.75),
+       ('TECLADO', 8, 90.25),
+       ('FONE', 2, 180.00);
        
        
 
