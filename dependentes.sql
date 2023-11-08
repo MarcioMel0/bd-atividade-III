@@ -1,5 +1,6 @@
 CREATE DATABASE DEPENDENTES;
 USE DEPENDENTES;
+DROP DATABASE DEPENDENTES;
 
 CREATE TABLE tb_funcionarios (
     id INT PRIMARY KEY,
@@ -17,11 +18,11 @@ CREATE TABLE tb_dependentes (
 
 
 INSERT INTO tb_funcionarios (id, nome, cargo)
-VALUES (1, 'Nome do Funcionário', 'Cargo do Funcionário');
+VALUES (1, 'SILVA', 'Cargo do Funcionário');
 
 
 INSERT INTO tb_dependentes (id, id_funcionario, nome, parentesco)
-VALUES (1, 1, 'Nome do Dependente', 'Parentesco do Dependente');
+VALUES (1, 1, 'LIMA', 'Parentesco do Dependente');
 
 
 DELIMITER //
